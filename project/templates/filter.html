@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Filter
+{% endblock %}
+
+{% block main %}
+
+    <form action="/filter" method="post">
+    <p style = "font-size: large; font-weight: bold">Select words you want to learn</p>
+    <button class="btn btn-primary" type="submit">Submit</button>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Check</th>
+                <th>Word</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                {% for row in index%}
+                <tr>
+                <td>
+                    <input type="checkbox" name="kanji" class="checkbox" value="{{row["kanji"]}}">
+                </td>
+                <td>{{row["kanji"]}}</td>
+                <td>{{row["total"]}}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+
+
+{% endblock %}

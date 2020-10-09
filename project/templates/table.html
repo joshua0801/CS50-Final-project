@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Table
+{% endblock %}
+
+{% block main %}
+    <p style = "font-size: large; font-weight: bold">Here is your most occuring words and count</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                {% for row in index%}
+                <tr>
+                    <td>{{row["kanji"]}}</td>
+                    <td>{{row["total"]}}</td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

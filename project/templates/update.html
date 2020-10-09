@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update
+{% endblock %}
+
+{% block main %}
+    <form action="/update" method="post">
+    <p style = "font-size: large; font-weight: bold; height: 20px;">Please give time for the server to update the database</p>
+        <div class="form-group">
+            <textarea autocomplete="off" autofocus class="form-control" style="width: 50%; height: 600px" name="text" placeholder="Text" type="text"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Update</button>
+    </form>
+{% endblock %}

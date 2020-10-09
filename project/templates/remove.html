@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Remove
+{% endblock %}
+
+{% block main %}
+    <form action="/remove" method="post">
+    <p style = "font-size: large; font-weight: bold; height: 20px;">Feeling confident you have the word in your vocabulary?</p>
+    <p style = "font-size: large; font-weight: bold; height: 20px;">Remove it here</p>
+            <div class="form-group">
+                <select class="form-control" name="kanji">
+                    <option disabled selected value="">Word</option>
+                    {% for row in index %}
+                        <option value = "{{row["kanji"]}}">{{row["kanji"]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        <button class="btn btn-primary" type="submit">Remove</button>
+    </form>
+{% endblock %}
