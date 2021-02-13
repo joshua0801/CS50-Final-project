@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=YN6gHB-yJtA
 
 "My Word Database" is webbase application that helps users build their vocabulary by helping them identify common and relevent words the user sees.
 
+If you are a language learner, feel free to use this app.
+
 ## Abstract
  
 While studying Japanese I came to a point I needed to build my vocabulary but was unsure of how to. Based on recommendations on reddit the best way is to take note of common words that you often see or hear. I used anki and added the most common words that I observed on online and had an improvement on both my reading and vocabulary. During this time as I was taking CS50 I had an idea to write an app that well streamline this process of finding these words.
