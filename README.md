@@ -4,7 +4,8 @@ https://www.youtube.com/watch?v=YN6gHB-yJtA
 
 "My Word Database" is webbase application that helps users build their vocabulary by helping them identify common and relevent words the user sees.
 
-Usable only for CS50 IDE
+Instructions:
+Copy code into CS50 IDE and use the command "run flask" in the folder
 
 ## Abstract
  
@@ -16,4 +17,3 @@ I created this website with the intention to help users identify the words that 
 Future updates:
 - Move code to django
 - Support for Asian characters
-- Algorithm for Japanese language
